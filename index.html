@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>It's Over Destek</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@400;500;700&display=swap">
+<style>
+/* Düzen: tek sütun, okunaklı metin; üstte oyunun gece İstanbul renkleriyle ince bir başlık bandı */
+:root {
+  --bg: #f7f5f0; --fg: #1d2230; --muted: #5d6475; --line: #dcd8cf; --accent: #c8343a; --band: #121a2e; --band-fg: #f3b23e;
+  --f-display: "Bungee", "Rubik", system-ui, sans-serif;
+  --f-body: "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0e1424; --fg: #e9e6dd; --muted: #a2a8b8; --line: #2a3350; --accent: #ff6b6b; --band: #070b16; --band-fg: #f3b23e; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0e1424; --fg: #e9e6dd; --muted: #a2a8b8; --line: #2a3350; --accent: #ff6b6b; --band: #070b16; --band-fg: #f3b23e; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 16px; line-height: 1.6; }
+.band { background: var(--band); color: var(--band-fg); padding-block: 28px 22px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.band-inner, main { max-width: 68ch; margin: 0 auto; }
+.band h1 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: clamp(24px, 6vw, 36px); line-height: 1.1; text-wrap: balance; }
+.band p { margin: 8px 0 0; color: #c9cfdd; font-size: 14px; }
+nav.lang { display: flex; gap: 14px; margin-top: 14px; font-size: 14px; }
+nav.lang a { color: var(--band-fg); }
+main { padding-block: 28px 56px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 8px; }
+section.lang-block { display: grid; gap: 4px; }
+section.lang-block + section.lang-block { border-top: 2px solid var(--line); margin-top: 32px; padding-top: 28px; }
+h2 { margin: 0 0 6px; font-size: 22px; line-height: 1.25; text-wrap: balance; }
+h3 { margin: 22px 0 4px; font-size: 17px; }
+p, ul { margin: 0 0 8px; }
+ul { padding-left: 20px; }
+li + li { margin-top: 4px; }
+.meta { color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mail { font-weight: 500; user-select: all; }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="band-inner">
+    <h1>It's Over · Destek</h1>
+    <p>Support · İstanbul'da mesaiye yetişme oyunu</p>
+    <nav class="lang" aria-label="Dil / Language"><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="lang-block" id="tr" lang="tr">
+    <h2>Türkçe</h2>
+    <p class="meta">Geliştirici: Mustafa Talha Ahmet · İletişim: <a class="mail" href="mailto:info@mtsa.com.tr">info@mtsa.com.tr</a></p>
+    <p>Bir sorun mu yaşadın ya da bir önerin mi var? Bize e-postayla yaz; cihaz modelini ve sorunun ne zaman olduğunu eklersen daha hızlı yardımcı oluruz.</p>
+
+    <h3>Sık sorulanlar</h3>
+    <p><strong>Nasıl oynanır?</strong> Şerit değiştirmek için sağa ya da sola, zıplamak için yukarı, kaymak için aşağı kaydır. Önden çarparsan koşu biter.</p>
+    <p><strong>Satın aldığım reklamsız sürüm ya da elmaslar görünmüyor.</strong> Menüde elmas sayısının yanındaki + düğmesine dokunup dükkânı aç ve "Satın alımları geri yükle" düğmesine bas. Aynı Apple Kimliği ile giriş yapmış olman gerekir.</p>
+    <p><strong>İlerlemem başka cihaza geçer mi?</strong> Evet, iOS'ta ilerlemen kendi iCloud hesabına yedeklenir. İki cihazda da aynı Apple Kimliği ile iCloud açık olmalı.</p>
+    <p><strong>İade istiyorum.</strong> Uygulama içi satın almaların iadesi Apple tarafından yapılır: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+    <p><a href="gizlilik.html">Gizlilik politikası</a></p>
+  </section>
+
+  <section class="lang-block" id="en" lang="en">
+    <h2>English</h2>
+    <p class="meta">Developer: Mustafa Talha Ahmet · Contact: <a class="mail" href="mailto:info@mtsa.com.tr">info@mtsa.com.tr</a></p>
+    <p>Having a problem or have a suggestion? Email us; including your device model and when the problem happened helps us respond faster.</p>
+
+    <h3>FAQ</h3>
+    <p><strong>How do I play?</strong> Swipe left or right to change lanes, up to jump and down to slide. Hitting an obstacle head-on ends the run.</p>
+    <p><strong>My ad-free purchase or gems are missing.</strong> Tap the + next to your gem count on the main menu to open the shop, then tap "Satın alımları geri yükle" (Restore Purchases). You need to be signed in with the same Apple ID.</p>
+    <p><strong>Does my progress move to another device?</strong> Yes, on iOS your progress is backed up to your own iCloud account. Use the same Apple ID with iCloud turned on on both devices.</p>
+    <p><strong>I want a refund.</strong> Refunds for in-app purchases are handled by Apple: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+    <p><a href="gizlilik.html">Privacy policy</a></p>
+  </section>
+</main>
+</body>
+</html>
